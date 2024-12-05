@@ -1,5 +1,4 @@
 
-
 //strategy inteface 
 interface PaymentStrategy {
   // abstract method pay()
@@ -72,7 +71,7 @@ class PaymentContext {
 
 // client class
 
-public class Main  {
+public class Main {
 
   public static void main(String args[]) {
     PaymentContext context = new PaymentContext();
@@ -86,11 +85,17 @@ public class Main  {
     context.setPaymentStrategy(paymentStrategy1);
     // execute payment using CreditCard
     context.pay(670);
+    System.out.println();
 
     System.out.println("Changing payment method ");
     context.setPaymentStrategy(paymentStrategy3);
-
     // execute payment using PaypalId
     context.pay(900);
+    System.out.println();
+
+    System.out.println("Changing payment method ");
+    context.setPaymentStrategy(paymentStrategy2);
+    context.pay(2000);
+
   }
 }
