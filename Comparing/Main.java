@@ -1,6 +1,7 @@
 package Comparing;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -53,6 +54,17 @@ public class Main {
             System.out.println(rahman.getName() + " marks-" + rahman.getMarks());
             System.out.println(monu.getName() + " marks-" + monu.getMarks());
         }
+
+        // Arrays class
+
+        System.out.println(Arrays.toString(students.toArray()));// will return as array of Student objects
+        System.out.println();
+        // array of Student type
+        Student list[] = { sonu, monu, rahman };
+        System.out.println(Arrays.toString(list));// expect arg as []
+        Arrays.sort(list);// it will do sorting based on  marks bcz we have overriden the compareTo() in Student class
+        System.out.println(Arrays.toString(list));
+
     }
 
 }
