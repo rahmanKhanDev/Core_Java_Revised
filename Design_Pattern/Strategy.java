@@ -48,7 +48,7 @@ class UpiPayment implements PaymentStrategy {
 }
 
 // context class(will decide the stregety)
-class PaymentContext {
+  class PaymentContext {
   // paymentStregtey obj
   private PaymentStrategy paymentStrategy;
   // set paymentStragey
@@ -71,7 +71,7 @@ class PaymentContext {
 
 // client class
 
-public class Main {
+public class Strategy {
 
   public static void main(String args[]) {
     PaymentContext context = new PaymentContext();
