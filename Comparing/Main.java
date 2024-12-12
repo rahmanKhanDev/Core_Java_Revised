@@ -38,7 +38,9 @@ public class Main {
             System.out.println(sonu.getName() + " marks-" + sonu.getMarks());
             System.out.println(monu.getName() + " marks-" + monu.getMarks());
         }
+        
         System.out.println();
+
         float comparedValue2 = rahman.compareTo(monu);
 
         if (comparedValue2 == 0) {
